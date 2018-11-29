@@ -1,0 +1,13 @@
+def news(func):
+  def inner():
+    func()
+    print("I have great idea!")
+  return inner
+  
+
+@news
+def func():
+  print("I am the king of the world")
+
+
+func()
